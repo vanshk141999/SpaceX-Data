@@ -1,0 +1,17 @@
+.controls {
+  margin-top: 30%;
+}
+
+/* ================== MEDIA QUERIES(Medium Devies) ================== */
+@media screen and (max-width: 1024px) {
+  .controls {
+    margin-top: 70%;
+  }
+}
+
+/* ================== MEDIA QUERIES(Small Devies) ================== */
+@media screen and (max-width: 600px) {
+  .controls {
+    margin-top: 100%;
+  }
+}
