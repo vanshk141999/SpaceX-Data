@@ -23,6 +23,7 @@ function Capsule(props) {
               currentTitle={props.title}
               currentDetails={props.details}
               currentStatus={props.status}
+              currentLandings={props.landings}
             />
           </div>
         </div>

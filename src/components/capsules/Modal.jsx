@@ -45,7 +45,9 @@ function Modal(props) {
                 id="details"
               >
                 <span className="font-semibold uppercase">Details - </span>
-                {props.currentDetails}
+                {props.currentDetails
+                  ? props.currentDetails
+                  : "No Details Found"}
               </h5>
               <h5
                 className="text-xl leading-normal text-gray-800 mb-4 capitalize"
@@ -53,6 +55,15 @@ function Modal(props) {
               >
                 <span className="font-semibold uppercase">Status - </span>
                 {props.currentStatus}
+              </h5>
+              <h5
+                className="text-xl leading-normal text-gray-800 mb-4 capitalize"
+                id="status"
+              >
+                <span className="font-semibold uppercase">
+                  No. of Landings -
+                </span>
+                {props.currentLandings}
               </h5>
             </div>
           </div>

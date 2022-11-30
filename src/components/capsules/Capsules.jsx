@@ -255,13 +255,21 @@ function Capsules() {
       <div className="md:-mt-8">
         <div className="md:grid md:grid-cols-3 lg:grid-cols-4 md:grid-flow-row md:gap-4 lg:gap-2 grid grid-cols-1 grid-flow-row gap-4 p-10 md:p-20 h-1/2">
           {currentCapsules.map(
-            ({ capsule_serial, type, details, status, original_launch }) => (
+            ({
+              capsule_serial,
+              type,
+              details,
+              status,
+              original_launch,
+              landings,
+            }) => (
               <div key={capsule_serial}>
                 <Capsule
                   title={type}
                   id={capsule_serial}
                   details={details}
                   status={status}
+                  landings={landings}
                   date={
                     original_launch
                       ? (d = moment(original_launch).format("MMM Do YYYY"))
