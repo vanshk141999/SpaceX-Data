@@ -224,10 +224,17 @@ function Capsules() {
           {/* Origin Launch */}
           <div className="year">
             <input
+              id="year"
               placeholder="ENTER YEAR"
               className="textInput3"
               type="text"
               value={year}
+              onClick={() => {
+                document.querySelector(".textInput1").value = "";
+                document.querySelector(".textInput2").value = "";
+                document.querySelector("#status").classList.remove("active");
+                document.querySelector("#type").classList.remove("active");
+              }}
               onChange={(e) => {
                 getByYear(e.target.value);
               }}
