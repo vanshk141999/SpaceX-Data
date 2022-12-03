@@ -1,8 +1,5 @@
-import React from "react";
-
 function Footer() {
-  const date = new Date();
-  const year = date.getFullYear();
+  let year = new Date().getFullYear();
   return (
     <footer>
       <div className="text-white text-center text-base bg-black py-1.5  mt-8">

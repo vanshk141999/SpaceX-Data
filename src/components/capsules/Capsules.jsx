@@ -2,7 +2,7 @@
 /* eslint-disable eqeqeq */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-unused-vars */
-import React, { Fragment, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import moment from "moment";
 import Capsule from "./Capsule";
 import Pagination from "../pagination/Pagination";
@@ -44,7 +44,6 @@ function Capsules() {
     type = "";
   }
 
-  console.log(url);
   //Year Filter
   const getByYear = (year) => {
     if (year.length > 0) {

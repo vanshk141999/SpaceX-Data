@@ -66,7 +66,6 @@
 }
 
 input {
-  /* z-index: -1; */
   position: absolute;
   top: 0;
   left: 0;
@@ -107,10 +106,6 @@ input {
   border-radius: 10px;
   background: #fff;
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
-  /* overflow: hidden; */
-  /* visibility: hidden; */
-  /* opacity: 0; */
-  /* transition: 0.25s; */
 }
 
 .year .option:hover {
@@ -153,12 +148,6 @@ input {
   background: white;
   padding: 12px 20px;
 }
-
-/* .year-option:hover {
-  background: black;
-  color: white;
-  transition: 0.5s;
-} */
 
 /* ================== MEDIA QUERIES(Medium Devies) ================== */
 @media screen and (max-width: 1024px) {

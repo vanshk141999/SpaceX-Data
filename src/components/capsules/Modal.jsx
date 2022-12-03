@@ -1,11 +1,6 @@
-import React from "react";
-
 function Modal(props) {
   return (
     <>
-      {/* {props.currentStatus === "retired"
-        ? document.querySelector("#status").addClass("bg-red-600")
-        : document.querySelector("#status").addClass("bg-green-600")} */}
       <button
         type="button"
         className=" inline-block px-6 py-2.5 bg-black text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-white hover:text-black hover:border-2 hover:border-black hover:shadow-lg focus:bg-white  focus:text-black focus:border-2 focus:border-black focus:shadow-lg focus:outline-none focus:ring-0 active:bg-white active:shadow-lg transition duration-150 ease-in-out"

@@ -2,8 +2,9 @@ import "./heroSection.css";
 import Hero1 from "../assets/hero1.webp";
 import Hero2 from "../assets/hero2.webp";
 import Hero3 from "../assets/hero3.webp";
+import Slide from "./Slide";
 
-function Section() {
+function HeroSection() {
   return (
     <div>
       <div
@@ -12,31 +13,22 @@ function Section() {
         data-bs-ride="carousel"
       >
         <div className="carousel-inner relative w-full overflow-hidden uppercase">
-          <div className="carousel-item active relative float-left w-full">
-            <img src={Hero1} className="block w-full h-screen" alt="..." />
-            <div className="carousel-caption bottom-1/3 md:block absolute text-center">
-              <h1 className="text-6xl md:text-8xl">Mars & Beyond</h1>
-              <p>The road to making humanity multiplanitary.</p>
-            </div>
-          </div>
-          <div className="carousel-item relative float-left w-full">
-            <img src={Hero2} className="block w-full h-screen" alt="..." />
-            <div className="carousel-caption bottom-1/3 md:block absolute text-center">
-              <h1 className="text-6xl md:text-8xl">Mars and Beyond!</h1>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
-          </div>
-          <div className="carousel-item relative float-left w-full">
-            <img src={Hero3} className="block w-full h-screen" alt="..." />
-            <div className="carousel-caption bottom-1/3 md:block absolute text-center">
-              <h1 className="text-6xl md:text-8xl">Mars and Beyond!</h1>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
-            </div>
-          </div>
+          <Slide
+            class="active"
+            image={Hero1}
+            heading="Mars & Beyond!"
+            tagline="The road to making humanity multiplanitary."
+          />
+          <Slide
+            image={Hero2}
+            heading="Mars & Beyond!"
+            tagline="The road to making humanity multiplanitary."
+          />
+          <Slide
+            image={Hero3}
+            heading="Mars & Beyond!"
+            tagline="The road to making humanity multiplanitary."
+          />
         </div>
       </div>
       {/* Previous Button */}
@@ -57,4 +49,4 @@ function Section() {
   );
 }
 
-export default Section;
+export default HeroSection;
